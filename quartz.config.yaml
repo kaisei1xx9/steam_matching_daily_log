@@ -1,24 +1,31 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
+
 configuration:
   pageTitle: SteamMatchingApp
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
+
   analytics:
     provider: plausible
-  locale: en-US
+
+  locale: ja-JP
   baseUrl: steam-matching-daily-log.pages.dev
+
   ignorePatterns:
     - private
     - templates
     - .obsidian
+
   theme:
     fontOrigin: googleFonts
     cdnCaching: true
+
     typography:
       header: Schibsted Grotesk
       body: Source Sans Pro
       code: IBM Plex Mono
+
     colors:
       lightMode:
         light: "#faf8f8"
@@ -30,6 +37,7 @@ configuration:
         tertiary: "#84a59d"
         highlight: rgba(143, 159, 169, 0.15)
         textHighlight: "#fff23688"
+
       darkMode:
         light: "#161618"
         lightgray: "#393639"
@@ -40,7 +48,9 @@ configuration:
         tertiary: "#84a59d"
         highlight: rgba(143, 159, 169, 0.15)
         textHighlight: "#b3aa0288"
+
 plugins:
+  # 更新日時
   - source: "@quartz-community/created-modified-date"
     enabled: true
     options:
@@ -50,6 +60,8 @@ plugins:
         - git
         - filesystem
     order: 10
+
+  # コードブロックのシンタックスハイライト
   - source: "@quartz-community/syntax-highlighting"
     enabled: true
     options:
@@ -58,6 +70,8 @@ plugins:
         dark: github-dark
       keepBackground: false
     order: 20
+
+  # Obsidian Markdown対応
   - source: "@quartz-community/obsidian-flavored-markdown"
     enabled: true
     options:
@@ -74,99 +88,79 @@ plugins:
       enableVideoEmbed: true
       enableCheckbox: true
     order: 30
+
+  # GitHub Flavored Markdown
   - source: "@quartz-community/github-flavored-markdown"
     enabled: true
     order: 40
+
+  # ページ内目次
   - source: "@quartz-community/table-of-contents"
     enabled: true
     order: 50
     layout:
       position: right
       priority: 30
+
+  # Markdownリンク / Wikilink
   - source: "@quartz-community/crawl-links"
     enabled: true
     options:
       markdownLinkResolution: shortest
     order: 60
+
+  # ページ説明
   - source: "@quartz-community/description"
     enabled: true
     order: 70
-  - source: "@quartz-community/latex"
-    enabled: true
-    options:
-      renderEngine: katex
-    order: 80
-  - source: "@quartz-community/citations"
-    enabled: false
-    order: 85
+
+  # 改行処理
   - source: "@quartz-community/hard-line-breaks"
     enabled: true
     order: 90
-  - source: "@quartz-community/ox-hugo"
-    enabled: false
-    order: 91
-  - source: "@quartz-community/roam"
-    enabled: false
-    order: 92
+
+  # Quartzフォント
   - source: "@quartz-community/quartz-fonts"
     enabled: true
+
+  # テーマ
   - source: "@quartz-themes/core"
     enabled: true
     options:
       theme: default
       mode: both
+
+  # draftを除外
   - source: "@quartz-community/remove-draft"
     enabled: true
-  - source: "@quartz-community/explicit-publish"
-    enabled: false
-  - source: "@quartz-community/unlisted-pages"
-    enabled: true
-    options: {}
-    order: 45
-  - source: "@quartz-community/encrypted-pages"
-    enabled: true
-    options:
-      iterations: 600000
-      passwordField: password
-      unlistWhenEncrypted: false
-      outputPath: static/encryptedContentIndex.json
-  - source: "@quartz-community/stacked-pages"
-    enabled: false
-    layout:
-      position: afterBody
-      priority: 50
-      display: all
-  - source: "@quartz-community/alias-redirects"
-    enabled: true
+
+  # サイトマップ / RSS
   - source: "@quartz-community/content-index"
     enabled: true
     options:
       enableSiteMap: true
       enableRSS: true
+
+  # favicon
   - source: "@quartz-community/favicon"
     enabled: true
-  - source: "@quartz-community/og-image"
-    enabled: true
-  - source: "@quartz-community/cname"
-    enabled: true
-  - source: "@quartz-community/canvas-page"
-    enabled: true
+
+  # Markdownページ
   - source: "@quartz-community/content-page"
     enabled: true
+
+  # フォルダページ
   - source: "@quartz-community/folder-page"
     enabled: true
-  - source: "@quartz-community/tag-page"
-    enabled: true
+
+  # 左側のファイル / フォルダ一覧
   - source: "@quartz-community/explorer"
     enabled: true
     layout:
       position: left
       priority: 50
-  - source: "@quartz-community/graph"
-    enabled: false
-    layout:
-      position: right
-      priority: 10
+
+  # 検索
   - source: "@quartz-community/search"
     enabled: true
     layout:
@@ -175,57 +169,53 @@ plugins:
       group: toolbar
       groupOptions:
         grow: true
-  - source: "@quartz-community/backlinks"
-    enabled: true
-    layout:
-      position: right
-      priority: 50
+
+  # 記事タイトル
   - source: "@quartz-community/article-title"
     enabled: true
     layout:
       position: beforeBody
       priority: 10
+
+  # ページメタ情報
   - source: "@quartz-community/content-meta"
     enabled: true
     layout:
       position: beforeBody
       priority: 20
-  - source: "@quartz-community/tag-list"
-    enabled: false
-    layout:
-      position: beforeBody
-      priority: 30
+
+  # サイトタイトル
   - source: "@quartz-community/page-title"
     enabled: true
     layout:
       position: left
       priority: 10
+
+  # ダークモード
   - source: "@quartz-community/darkmode"
     enabled: true
     layout:
       position: left
       priority: 30
       group: toolbar
+
+  # リーダーモード
   - source: "@quartz-community/reader-mode"
     enabled: true
     layout:
       position: left
       priority: 35
       group: toolbar
+
+  # パンくずリスト
   - source: "@quartz-community/breadcrumbs"
     enabled: true
     layout:
       position: beforeBody
       priority: 5
       condition: not-index
-  - source: "@quartz-community/comments"
-    enabled: false
-    options:
-      provider: giscus
-      options: {}
-    layout:
-      position: afterBody
-      priority: 10
+
+  # フッター
   - source: "@quartz-community/footer"
     enabled: true
     options:
@@ -235,8 +225,8 @@ plugins:
     layout:
       position: footer
       priority: 50
-  - source: "@quartz-community/recent-notes"
-    enabled: false
+
+  # モバイル用スペーサー
   - source: "@quartz-community/spacer"
     enabled: true
     options: {}
@@ -245,56 +235,35 @@ plugins:
       position: left
       priority: 25
       display: mobile-only
-  - source: "@quartz-community/bases-page"
-    enabled: true
-    options: {}
-    order: 50
-  - source: "@quartz-community/note-properties"
-    enabled: true
-    options:
-      includeAll: false
-      includedProperties:
-        - description
-        - tags
-        - aliases
-      excludedProperties: []
-      hidePropertiesView: false
-      delimiters: ---
-      language: yaml
-    order: 5
-    layout:
-      position: beforeBody
-      priority: 15
-      display: all
-  - source: "@quartz-community/obsidian-plugin-excalidraw"
-    enabled: true
-    options:
-      enableInteraction: true
-      darkMode: auto
-      exportPadding: 20
-    order: 50
+
 layout:
   groups:
     toolbar:
       priority: 35
       direction: row
       gap: 0.5rem
+
   byPageType:
     "404":
       positions:
         beforeBody: []
         left: []
         right: []
+
     content: {}
+
     folder:
       exclude:
         - reader-mode
       positions:
         right: []
+
     tag:
       exclude:
         - reader-mode
       positions:
         right: []
+
     canvas: {}
+
     bases: {}
