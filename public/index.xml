@@ -10,24 +10,36 @@
     <link>https://steam-matching-daily-log.pages.dev/daily/</link>
     <guid>https://steam-matching-daily-log.pages.dev/daily/</guid>
     <description><![CDATA[  ]]></description>
-    <pubDate>Wed, 19 Aug 2026 04:17:38 GMT</pubDate>
+    <pubDate>Fri, 21 Aug 2026 08:10:44 GMT</pubDate>
+  </item><item>
+    <title></title>
+    <link>https://steam-matching-daily-log.pages.dev/daily/day3</link>
+    <guid>https://steam-matching-daily-log.pages.dev/daily/day3</guid>
+    <description><![CDATA[ 8/21 day2で作成したいgame_concept草案、AIの良さが出ていないのでまずその修正をしたい。と思ったが、一旦完成品を目指すので放置。 ひとまず謎解き（謎ってほどではないが）ゲームのゴールまでの動きができた。 Transclude of app1/index steam-matching-daily-log.pages.dev/app1/ 実際にゲームをプレイしてみると、2人で協力する楽しみが見えて来ず、改めて自由なテキストチャットのやりとりをできるようにしたいと考えたが、やはり出会いの場合になってしまう可能性があるため難しい。ゲームとしての楽しさも出会いという体験もどちらも実現... ]]></description>
+    <pubDate>Fri, 21 Aug 2026 08:01:31 GMT</pubDate>
   </item><item>
     <title></title>
     <link>https://steam-matching-daily-log.pages.dev/</link>
     <guid>https://steam-matching-daily-log.pages.dev/</guid>
-    <description><![CDATA[  title: Steamに出会いを求めるのは間違っているだろうか 日誌（詳細は各ページへ） day1 さらっと調べただけで終わる day2 日誌をwebにあげた、. ]]></description>
-    <pubDate>Wed, 19 Aug 2026 03:08:52 GMT</pubDate>
+    <description><![CDATA[  title: マーダーミステリー的なゲームを作る予定 最初はSteamに出会い系のゲームを公開したくて始めたプロジェクト。色々あってday3にしてタイトルを「マーダーミステリー的なゲームを作る予定」に変更。 日誌（詳細は各ページへ） day1 さらっと調べただけで終わる day2 日誌をwebにあげた、game_concept草案を作成した day3. ]]></description>
+    <pubDate>Fri, 21 Aug 2026 08:01:31 GMT</pubDate>
+  </item><item>
+    <title></title>
+    <link>https://steam-matching-daily-log.pages.dev/daily/day2</link>
+    <guid>https://steam-matching-daily-log.pages.dev/daily/day2</guid>
+    <description><![CDATA[ 8/19 異性紹介事業の届出をするかしないか悩んだ結果、最短でサービスを開始することを優先して届出をしない方向で決めた。つまりゲームを一緒にできる男女を問わない、誰かとマッチングできるゲームを作ることになった。 となると、既に類似するものがおそらくあるはずなので、それを調べた結果GamerLink, GameTreeなどのアプリがある様子。あとはsteam内やdiscordなど。考えているものがなさそうなので、このまま進めてみる。 問題点はゲーム要素、自分と近しい属性の人を見つけることは難しくないが、steamにあげる以上、ゲーム要素をしっかり考えておかないといけない。 memo 類似サービス... ]]></description>
+    <pubDate>Fri, 21 Aug 2026 00:12:38 GMT</pubDate>
+  </item><item>
+    <title></title>
+    <link>https://steam-matching-daily-log.pages.dev/game_concept</link>
+    <guid>https://steam-matching-daily-log.pages.dev/game_concept</guid>
+    <description><![CDATA[ 非同期「選択チャット謎解き」ゲーム 設計書 コンセプト 事前準備：複数の「ベースストーリー＋問題＋正解」をテンプレートとして用意、ただし同じストーリーでも正解は複数あって、何度かは楽しめるようにしたい AI の役割：テンプレートの「余白（状況説明、キャラクター名、ヒントの表現など）」を動的に埋めて、各ペアごとに個別の体験を生成 非同期プレイ：自分と相手がそれぞれのタイミングで選択肢を選び、両者の選択が揃った時点で AI が結果を生成して次のターンへ 最終地点は、二人が同じ時間にログインして、同時に結果を見れるようにしたい ゲームフロー 1. ]]></description>
+    <pubDate>Fri, 21 Aug 2026 00:12:38 GMT</pubDate>
   </item><item>
     <title></title>
     <link>https://steam-matching-daily-log.pages.dev/daily/day1</link>
     <guid>https://steam-matching-daily-log.pages.dev/daily/day1</guid>
     <description><![CDATA[ やったこと 軽く調べた結果、異性紹介事業の届出が面倒そうなので今後の方針としては２パターンある。 1つは性別関係なくマッチングするサービス。 1つは異性紹介事業の届出をした上で、マッチングサービスとして進める。 どちらもメリットデメリットがあり、今の段階ではどちらにするかまだ決めかねている状態。. ]]></description>
-    <pubDate>Wed, 19 Aug 2026 02:10:11 GMT</pubDate>
-  </item><item>
-    <title></title>
-    <link>https://steam-matching-daily-log.pages.dev/daily/day2</link>
-    <guid>https://steam-matching-daily-log.pages.dev/daily/day2</guid>
-    <description><![CDATA[ 未記入. ]]></description>
     <pubDate>Wed, 19 Aug 2026 02:10:11 GMT</pubDate>
   </item>
     </channel>

@@ -4,8 +4,9 @@ day2で作成したい[[game_concept]]草案、AIの良さが出ていないの�
 
 ひとまず謎解き（謎ってほどではないが）ゲームのゴールまでの動きができた。
 
-![[matching_app/steam_matching_daily_log/public/app1/index.html]]
+![[app1/index.html]]
 
+https://steam-matching-daily-log.pages.dev/app1/
 
 ![[app_ss.png]]
 
