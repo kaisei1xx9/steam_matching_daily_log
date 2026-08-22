@@ -10,6 +10,6 @@
 https://gamerlinkapp.com/
 http://www.gametree.me/onboarding/discord
 
-[[game_concept]]草案を作成した
+[[game_concept_matching]]草案を作成した
 #### とりあえず最低限動くものを作る
 
